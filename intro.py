@@ -13,7 +13,7 @@ def draw():
     alien.draw()
 
 def update():
-    alien.left += 2
+    alien.left += 4
     if alien.left > WIDTH:
         alien.right = 0
 
