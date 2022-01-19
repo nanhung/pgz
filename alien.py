@@ -19,7 +19,9 @@ def update():
 
 def on_mouse_down(pos):
     if alien.collidepoint(pos):
-        print("Eek!")
+        print("Eek")
+        sounds.eep.play()
+        alien.image = 'alien_hurt'
     else:
         print("You missed me!")
 
